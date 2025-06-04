@@ -1,6 +1,19 @@
 # 🤖 Area Clienti Chatbot
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![LangChain](https://img.shields.io/badge/langchain-v0.2-yellow)
 
-**Area Clienti Chatbot** è un assistente conversazionale estensibile basato su [LangChain v0.2](https://www.langchain.com/) per la gestione clienti, login tramite OTP e accesso ai dati anagrafici, fatture e servizi.
+**Area Clienti Chatbot** è un assistente conversazionale **intelligente e modulare**, progettato per simulare un'interfaccia di assistenza clienti automatizzata. Il sistema è costruito con [LangChain v0.2](https://www.langchain.com/), sfrutta modelli OpenAI con agenti basati su *function calling* e consente di gestire in modo naturale e sicuro funzionalità come:
+
+* **Autenticazione utente via OTP**
+* **Accesso ai dati anagrafici**
+* **Visualizzazione delle fatture recenti**
+* **Consultazione dei servizi attivi**
+
+Il progetto è stato sviluppato con l’obiettivo di **dimostrare competenze avanzate** nell’integrazione tra LLM, orchestrazione agentica, gestione sicura degli accessi, interazione con database relazionali e progettazione modulare del codice. Utilizza una **pipeline LangChain basata su LCEL (LangChain Expression Language)**, rendendo l'agente facilmente estendibile per scenari aziendali più ampi.
+
+> Pensato come **progetto portfolio**, *Area Clienti Chatbot* dimostra la capacità di realizzare sistemi conversazionali robusti, sicuri e facilmente integrabili in ambienti reali (es. CRM, helpdesk, ERP).
+
 
 ---
 
@@ -56,6 +69,8 @@ DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=customer_db
 ```
+# ⚠️ Non condividere questo file! Contiene credenziali sensibili.
+
 
 ---
 
@@ -95,6 +110,13 @@ Tu: 123456
 
 Tu: mostrami le mie ultime fatture
 📊 [...]
+
+Tu: che servizi ho attivi?
+📄 Servizi attivi: Luce Casa, Gas Variabile
+
+Tu: mostra l’anagrafica
+👤 Nome: Mario Rossi | Email: mario@example.com | Telefono: 320...
+
 ```
 
 ---
