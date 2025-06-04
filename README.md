@@ -70,9 +70,9 @@ python init_db.py
 Utenti inclusi:
 
 * `testuser`
-* `gianluca`
-* `gianroberto`
-* `antonio`
+* `Mario`
+* `Lino`
+* `Maria`
 
 ---
 
